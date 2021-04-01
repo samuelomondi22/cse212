@@ -19,8 +19,8 @@ This operation requires recursion. Recursion is when the program keeps calling i
 
 <img src="/path.png">
 
-    The nodes are to be stored in a specific way for insertion to happen smoothly. Left side will hold less value than its own while the right holds the greater values.
-    Starting with a node of 5 as the root node to add a second value you have to compare with the root node. Since 5 is greater than 3 then:
+The nodes are to be stored in a specific way for insertion to happen smoothly. Left side will hold less value than its own while the right holds the greater values.
+Starting with a node of 5 as the root node to add a second value you have to compare with the root node. Since 5 is greater than 3 then:
 
 <img src="/ex1.jpg">
 
