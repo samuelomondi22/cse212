@@ -15,7 +15,7 @@ More of a structural binary tree. All the nodes in the left sub-tree are less th
 Needful operations required for a BST are insert and display even though they need to maintain that BST remains with it's structure.
 
 1. Inserting into BST.
-This operation requires recursion. Recursion is when the program keeps calling itself until a condition is met. We need this to find the path to the maximum and minimum value. This requires a performance of O(n) taking into consideration that the tree is not balanced but if the tree happens to be balanced the performance required would be O(1) as you could just cut the tree in half.
+<p>This operation requires recursion. Recursion is when the program keeps calling itself until a condition is met. We need this to find the path to the maximum and minimum value. This requires a performance of O(n) taking into consideration that the tree is not balanced but if the tree happens to be balanced the performance required would be O(1) as you could just cut the tree in half.</p>
 
 <img src="/path.png">
 
@@ -42,7 +42,7 @@ def insert(self, data):
 ```
 
 2. Display
-We traverse when we want to display. The traverse will visit the each node from smallest to largest. It has a O(n) performance.
+<p>We traverse when we want to display. The traverse will visit the each node from smallest to largest. It has a O(n) performance.</p>
 
 ```
 """
@@ -63,5 +63,36 @@ def _traverse_forward(self, node):
 ```
 
 **Example**
+This code shows insertion within a tree. 
+```
+def insert(self, data):
+	if self.root is None:
+		self.root = BST.Node(data)
+	else:
+		self._insert(data, self.root)  # Start at the root
+
+def _insert(self, data, node):
+	if data < node.data:
+		# The data belongs on the left side.
+		if node.left is None:
+			# We found an empty spot
+			node.left = BST.Node(data)
+		else:
+			# Need to keep looking.  Call _insert
+			# recursively on the left subtree.
+			self._insert(data, node.left)
+	elif data >= node.data:
+		# The data belongs on the right side.
+		if node.right is None:
+			# We found an empty spot
+			node.right = BST.Node(data)
+		else:
+			# Need to keep looking.  Call _insert
+			# recursively on the right subtree.
+			self._insert(data, node.right)
+```
 
 **Problem**
+Using this example to insert in the node by comparing the left and right subtree.
+
+When done , take a look at the [solution](/3-tree.py).

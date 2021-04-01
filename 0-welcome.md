@@ -12,8 +12,10 @@ Each module will contain detailed and organized coverage of the topic plus diagr
 **Contact**
 In any chance you have additional questions and problem:
 
-Samuel Omondi, BYU-Idaho,CSE 212
+Samuel Omondi, BYU-Idaho,CSE 212 \
 [omo18001@byui.edu](omo18001@byui.edu)
+
+[Go back to the welcome page](/0-welcome.md)
 
 
 
