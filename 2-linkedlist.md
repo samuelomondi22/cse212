@@ -99,7 +99,7 @@ llist.LListprint()
 ```
 
 **Problem**
-Use the things you have learned to create a python program that:
+<p>Use the things you have learned to create a python program that:</p>
 1. Inserts a tail
 2. Removes a tail
 3. Replace a node
@@ -109,3 +109,5 @@ Use the things you have learned to create a python program that:
 Use this as a skeleton for the solution.
 
 When done, take a look at the [solution](/2-linkedlist.py)
+
+[Go back to the welcome page](/0-welcome.md)

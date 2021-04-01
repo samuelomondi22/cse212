@@ -3,12 +3,12 @@
 Tree have a parent child relationship between items. It is like looking at a tree upside down with the root being the mother of everything. That is what we call a root node. Other parts connected to the root node are also nodes but more precisely a leaf. 
 
 - ***Binary Tree***
-It is a node with a maximum of two children. 
+<p>It is a node with a maximum of two children.</p>
 
 <img src="/binary.jpg">
 
 - ***binary search tress***
-More of a structural binary tree. All the nodes in the left sub-tree are less than or equal to the value of that node. Also, all the nodes in the right sub-tree of this node are greater than that of the parent node.
+<p>More of a structural binary tree. All the nodes in the left sub-tree are less than or equal to the value of that node.</p> Also, all the nodes in the right sub-tree of this node are greater than that of the parent node.
 
 <img src="/bst.png">
 
@@ -93,6 +93,8 @@ def _insert(self, data, node):
 ```
 
 **Problem**
-Using this example to insert in the node by comparing the left and right subtree.
+<p>Using this example to insert in the node by comparing the left and right subtree.</p>
 
-When done , take a look at the [solution](/3-tree.py).
+When done , take a look at the [solution](/3-tree.py)
+
+[Go back to the welcome page](/0-welcome.md)

@@ -114,6 +114,8 @@ queue.que_rear()
 ```
 
 **Problem**
-Write a Python program to create a queue and display all the members and size of the queue. 
+<p>Write a Python program to create a queue and display all the members and size of the queue.</p> 
 
 When done, take a look at the [solution](/1-queue.py)
+
+[Go back to the welcome page](/0-welcome.md)
