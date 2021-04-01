@@ -12,7 +12,55 @@ More of a structural binary tree. All the nodes in the left sub-tree are less th
 
 <img src="/bst.png">
 
-Needful operations required for a BST are insert and remove even though they need to maintain that BST remains with it's structure.
+Needful operations required for a BST are insert and display even though they need to maintain that BST remains with it's structure.
+
+    1. Inserting into BST.
+    This operation requires recursion. Recursion is when the program keeps calling itself until a condition is met. We need this to find the path to the maximum and minimum value. This requires a perfomance of O(n). 
+
+<img src="/path.png">
+
+    The nodes are to be stored in a specific way for insertion to happen smoothly. Left side will hold less value than its own while the right holds the greater values.
+    Starting with a node of 5 as the root node to add a second value you have to compare with the root node. Since 5 is greater than 3 then:
+
+<img src="/ex1.jpg">
+
+<code>
+def insert(self, data): 
+    node = Node(data) 
+    if self.root_node is None: 
+            self.root_node = node 
+    else:
+        current = self.root_node 
+        parent = None 
+        while True: 
+        parent = current
+        if node.data < current.data:             
+            current = current.left_child             
+        if current is None:                 
+            parent.left_child = node                 
+            return 
+</code>
+
+    2. Display
+    We traverse when we want to display. The traverse will visit the each node from smallest to largest. It has a O(n) performance.
+
+<code>
+"""
+Helps in getting the next item
+"""
+def __iter__(self):
+	yield from self._traverse_forward(self.root)  
+
+def _traverse_forward(self, node):
+	if node is not None:
+    """
+    yield provides the next value for the loop allowing the function to start back where it left off when 
+    __iter__ is called again
+    """
+		yield from self._traverse_forward(node.left)
+		yield node.data
+		yield from self._traverse_forward(node.right)
+</code>
 
 **Example**
 

@@ -9,7 +9,7 @@ While inserting you do not have to move every element over. The first part of th
 
 - ***inserting at the beginning***
 
-Inserting at the beginning means you have to put the pointer to the current head of the linked list and then making it become the second data element while the new node becomes the head.
+Inserting at the beginning means you have to put the pointer to the current head of the linked list and then making it become the second data element while the new node becomes the head. Inserting or removing at the beginning requires a performance of O(1)
 
 <img src="/Linkedlist_insert_at_start.png">
 
@@ -20,7 +20,7 @@ It is a 4 step process that requires:
     - finally making the head to equal the new node
 
 - ***inserting at the end***
-This involves pointing the next pointer of the the current last node of the linked list to the new data node.
+This involves pointing the next pointer of the the current last node of the linked list to the new data node. Inserting or removing at the tail requires an O(1) performance.
 
 <img src="/Linkedlist_insert_last.png">
 
@@ -39,6 +39,8 @@ This involves a 5 step process:
     - setting up next of new node to the next node after the current node
     - setting up the previous of the next node after the current new node
     - finally making the current node to equal the new node
+
+Inserting or removing at the middle requires a performance of O(n) and this is because a loop is required. 
 
 **Example**
 
