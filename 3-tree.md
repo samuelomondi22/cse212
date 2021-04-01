@@ -14,8 +14,8 @@ More of a structural binary tree. All the nodes in the left sub-tree are less th
 
 Needful operations required for a BST are insert and display even though they need to maintain that BST remains with it's structure.
 
-    1. Inserting into BST.
-    This operation requires recursion. Recursion is when the program keeps calling itself until a condition is met. We need this to find the path to the maximum and minimum value. This requires a perfomance of O(n). 
+1. Inserting into BST.
+This operation requires recursion. Recursion is when the program keeps calling itself until a condition is met. We need this to find the path to the maximum and minimum value. This requires a performance of O(n). 
 
 <img src="/path.png">
 
@@ -41,8 +41,8 @@ def insert(self, data):
             return 
 </code>
 
-    2. Display
-    We traverse when we want to display. The traverse will visit the each node from smallest to largest. It has a O(n) performance.
+2. Display
+We traverse when we want to display. The traverse will visit the each node from smallest to largest. It has a O(n) performance.
 
 <code>
 """
